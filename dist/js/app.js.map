@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"app.js","sourcesContent":["/**\n * Created by yagami on 5/24/17.\n */\nalert('JS app');\n"]}

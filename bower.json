@@ -1,0 +1,20 @@
+{
+  "name": "automation",
+  "description": "Preprocessors and Deployment workflow",
+  "main": "index.js",
+  "authors": [
+    "Pavlo Lysak"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Gulp",
+    "Jade",
+    "Sass"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery-ui": "^1.12.1",
+    "angular": "^1.6.4"
+  }
+}
