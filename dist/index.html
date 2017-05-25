@@ -5,7 +5,26 @@
     <link rel="stylesheet" href="css/application.min.css"/>
   </head>
   <body>
-    <p>Hello World 11</p>
+    <p>Hello</p>
+    <script>
+      'use strict';
+      function User(firstName, lastName) {
+          var phrase = "Привет";
+          var firstName = 'Uasya' || firstName;
+          var lastName = lastName || 'Piterskiy';
+      
+          function getFullName() {
+              return firstName + " " + lastName;
+          }
+      
+          this.sayHi = function () {
+              alert(phrase + ", " + getFullName());
+          };
+      }
+      var vasya = new User(undefined, "Петров");
+      vasya.sayHi();
+      $('p').draggable();
+    </script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

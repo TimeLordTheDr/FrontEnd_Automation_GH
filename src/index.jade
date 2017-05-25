@@ -3,5 +3,23 @@ html
         script(src="/assets/js/lib.min.js")
         link(rel="stylesheet" href="css/application.min.css")
     body
-        p Hello World 11
+        p Hello
+        script. //WE USE 'script.' TO RENDER INLINE JS
+            'use strict';
+            function User(firstName, lastName) {
+                var phrase = "Привет";
+                var firstName = 'Uasya' || firstName;
+                var lastName = lastName || 'Piterskiy';
+
+                function getFullName() {
+                    return firstName + " " + lastName;
+                }
+
+                this.sayHi = function () {
+                    alert(phrase + ", " + getFullName());
+                };
+            }
+            var vasya = new User(undefined, "Петров");
+            vasya.sayHi();
+            $('p').draggable();
         script(src="js/app.min.js")
