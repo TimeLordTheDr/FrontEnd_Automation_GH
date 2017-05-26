@@ -20,7 +20,7 @@ gulp.task("concatApp", function() {
         "src/js/services/*.js",
         "src/js/controllers/*.js",
         "src/js/directives/*.js",
-        "src/js/app.js"
+        "src/js/*.js"
         ]
     )
         .pipe(maps.init())
