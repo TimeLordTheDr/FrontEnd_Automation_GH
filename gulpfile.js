@@ -13,8 +13,6 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     reload = require('gulp-livereload'),
     //pipe = require('gulp-pipe'), NOT NECESSARY SINCE IT EXPLOITS JQUERY PIPE METHOD
-    //browser = require('gulp-browser'),
-    //bundle = require('gulp-module-bundle'),
     jade = require('gulp-jade');
 
 gulp.task("concatApp", function() {
@@ -65,7 +63,8 @@ gulp.task('sass', function() {
 
 gulp.task('jade', function() {
     return gulp.src('src/index.jade')
-        .pipe(jade({pretty: true}))
+        .pipe(jade())
+        .pipe(uglify())
         .pipe(gulp.dest('dist'))
         .pipe(reload());
 });

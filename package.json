@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": " watch-run -p 'dist/js/*.js' browserify dist/js/app.min.js >> dist/js/app-browserify.js"
+    "watch": " watch-run -p 'dist/js/*.js' browserify dist/js/app.min.js >> dist/js/app-browserify.js",
+    "watchify": "watchify dist/js/app.js -o dist/js/app-browserify.js && minify dist/js/app-browserify.js"
   },
   "keywords": [
     "Gulp",
@@ -26,7 +27,9 @@
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
+    "minifier": "^0.8.1",
     "npm-watch": "^0.1.9",
-    "watch-run": "^1.2.5"
+    "watch-run": "^1.2.5",
+    "watchify": "^3.9.0"
   }
 }
