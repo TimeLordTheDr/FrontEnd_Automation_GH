@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.js","browserify.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;ACJA","file":"app.js","sourcesContent":["/**\n * Created by yagami on 5/24/17.\n */\nalert('JS app 1');\n","console.log('BEEP BOOP');"]}
+{"version":3,"sources":["app.js","browserify.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;ACLA;AACA;AACA;AACA","file":"app.js","sourcesContent":["/**\n * Created by yagami on 5/24/17.\n */\n\nalert('Js app');\n","var uniq = require('uniq');\nvar p = prompt('enter some sequence 3333').split(',');\nconsole.log(uniq(p));\n"]}

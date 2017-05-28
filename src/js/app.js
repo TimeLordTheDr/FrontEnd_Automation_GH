@@ -1,4 +1,5 @@
 /**
  * Created by yagami on 5/24/17.
  */
-alert('JS app 1');
+
+alert('Js app');
