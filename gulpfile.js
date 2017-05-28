@@ -64,7 +64,6 @@ gulp.task('sass', function() {
 gulp.task('jade', function() {
     return gulp.src('src/index.jade')
         .pipe(jade())
-        .pipe(uglify())
         .pipe(gulp.dest('dist'))
         .pipe(reload());
 });

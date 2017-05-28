@@ -1,3 +1,3 @@
 var uniq = require('uniq');
-var p = prompt('enter some sequence separated by comma. Does the minification pipeline work?').split(',');
+var p = prompt('enter some sequence separated by comma. Browserification clean-up finished!!').split(',');
 console.log(uniq(p));

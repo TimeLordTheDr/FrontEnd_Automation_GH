@@ -1,30 +1,17 @@
+<html><head><script src="/assets/js/lib.min.js"></script><link rel="stylesheet" href="css/application.min.css"/></head><body><p>Hello</p><script>'use strict';
+function User(firstName, lastName) {
+    var phrase = "Привет";
+    var firstName = 'Uasya' || firstName;
+    var lastName = lastName || 'Piterskiy';
 
-<html>
-  <head>
-    <script src="/assets/js/lib.min.js"></script>
-    <link rel="stylesheet" href="css/application.min.css"/>
-  </head>
-  <body>
-    <p>Hello</p>
-    <script>
-      'use strict';
-      function User(firstName, lastName) {
-          var phrase = "Привет";
-          var firstName = 'Uasya' || firstName;
-          var lastName = lastName || 'Piterskiy';
-      
-          function getFullName() {
-              return firstName + " " + lastName;
-          }
-      
-          this.sayHi = function () {
-              alert(phrase + ", " + getFullName());
-          };
-      }
-      var vasya = new User(undefined, "Петров");
-      vasya.sayHi();
-      $('p').draggable();
-    </script>
-    <script src="js/app-browserify.js"></script>
-  </body>
-</html>
+    function getFullName() {
+        return firstName + " " + lastName;
+    }
+
+    this.sayHi = function () {
+        alert(phrase + ", " + getFullName());
+    };
+}
+var vasya = new User(undefined, "Петров");
+vasya.sayHi();
+$('p').draggable();</script><script src="js/app-browserify.min.js"></script></body></html>
