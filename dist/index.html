@@ -1,4 +1,7 @@
-<html><head><script src="/assets/js/lib.min.js"></script><link rel="stylesheet" href="css/application.min.css"/></head><body><p>Hello 11</p><script>'use strict';
+<html><head><script src="/assets/js/lib.min.js"></script><link rel="stylesheet" href="css/application.min.css"/></head><body><p>Hello</p><script>'use strict';
+/*$(window).on('load', function () {
+    alert("window load occurred!");
+});*/ //WE USE document.ready INSTEAD SINCE IT ENSURES FULL PAGE LOAD BETTER
 function User(firstName, lastName) {
     var phrase = "Привет";
     var firstName = 'Uasya' || firstName;
@@ -14,4 +17,6 @@ function User(firstName, lastName) {
 }
 var vasya = new User(undefined, "Петров");
 vasya.sayHi();
-$('p').draggable();</script><script src="js/app-browserify.min.js"></script></body></html>
+$('p').draggable();</script><script>$(document).ready(function () {
+   $.getScript("../dist/js/app-browserify.min.js");
+});</script></body></html>

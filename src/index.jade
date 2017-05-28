@@ -3,9 +3,12 @@ html
         script(src="/assets/js/lib.min.js")
         link(rel="stylesheet" href="css/application.min.css")
     body
-        p Hello 11
+        p Hello
         script. //WE USE 'script.' TO RENDER INLINE JS
             'use strict';
+            /*$(window).on('load', function () {
+                alert("window load occurred!");
+            });*/ //WE USE document.ready INSTEAD SINCE IT ENSURES FULL PAGE LOAD BETTER
             function User(firstName, lastName) {
                 var phrase = "Привет";
                 var firstName = 'Uasya' || firstName;
@@ -22,4 +25,7 @@ html
             var vasya = new User(undefined, "Петров");
             vasya.sayHi();
             $('p').draggable();
-        script(src="js/app-browserify.min.js")
+        script.
+            $(document).ready(function () {
+               $.getScript("../dist/js/app-browserify.min.js");
+            });
